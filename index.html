@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Kata-Kata Instagram</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animasi Nebula Ringan -->
+    <div class="nebula"></div>
+    
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+        <div class="loading-text">wait.. cuy sedang Membuat Gambar...</div>
+    </div>
+
+    <!-- Form Container -->
+    <div class="container" id="formContainer">
+        <div class="header">
+            <h1>Template Kata-Kata Instagram</h1>
+            <div class="ig-logo">
+                <i class="fab fa-instagram"></i>
+            </div>
+        </div>
+        
+        <p class="subtitle">Yoo gw bikini story jj kata kata buat klean yg suka bikin jj atau story lainnya😎.</p>
+        
+        <!-- Preview Foto Profil Kosong -->
+        <div style="text-align: center; margin-bottom: 25px;">
+            <div class="empty-profile-preview">
+                <i class="fas fa-user"></i>
+            </div>
+            <small style="color: #888; font-size: 13px;">Jan lupa Join ch (saluran) dibawah</small>
+        </div>
+        
+        <div class="form-group">
+            <label for="profileName">
+                <i class="fas fa-user-circle"></i> Nama Profil:
+            </label>
+            <input type="text" id="profileName" placeholder="Masukkan nama profil Anda" maxlength="30">
+        </div>
+        
+        <div class="form-group">
+            <label>
+                <i class="fas fa-camera"></i> Foto Profil (Opsional):
+            </label>
+            <div class="photo-upload-container">
+                <label for="profileImage" class="profile-image-label">
+                    <i class="fas fa-cloud-upload-alt"></i> Upload Foto Profil
+                </label>
+                <input type="file" id="profileImage" class="profile-image-input" accept="image/*">
+                <span class="upload-note">Kosongkan untuk menggunakan profil default yang transparan</span>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label for="mainText">
+                <i class="fas fa-quote-left"></i> Isi Kata-Kata:
+            </label>
+            <textarea id="mainText" placeholder="Tulis kata-kata inspirasi, motivasi, atau kutipan favorit Anda di sini..."></textarea>
+        </div>
+        
+        <div class="form-group">
+            <label for="byText">
+                <i class="fas fa-pen-fancy"></i> Penanda (By):
+            </label>
+            <input type="text" id="byText" placeholder="by rhmt" value="by rhmt" maxlength="20">
+        </div>
+        
+        <div class="button-group">
+            <button class="generate-btn" id="generateBtn">
+                <i class="fas fa-magic"></i> Generate Gambar
+            </button>
+            <button class="reset-btn" id="resetBtn">
+                <i class="fas fa-redo"></i> Reset Form
+            </button>
+        </div>
+        
+        <!-- Tips Section -->
+        <div class="tips-container">
+            <div class="tips-header">
+                <i class="fas fa-lightbulb"></i> Tips untuk Hasil Terbaik
+            </div>
+            <ul class="tips-list">
+                <li>Gunakan kata-kata singkat dan bermakna</li>
+                <li>Foto profil opsional - default transparan akan digunakan jika tidak diupload</li>
+                <li>Format nama: @username atau nama biasa</li>
+                <li>Hasil gambar siap untuk Instagram Stories atau Feed</li>
+            </ul>
+        </div>
+        
+        <div class="channel-link">
+            <a href="https://whatsapp.com/channel/0029VbBCfLWL2AU8SGofvA04" target="_blank">
+                <i class="fab fa-whatsapp"></i> follow ch untuk update tools/web lainnya
+            </a>
+        </div>
+    </div>
+
+    <!-- PREVIEW CONTAINER -->
+    <div class="preview-container" id="previewContainer">
+        <div class="preview-header">
+            <div class="preview-avatar" id="previewAvatar">
+                <!-- Gambar profil akan dimuat di sini -->
+            </div>
+            <div class="preview-name" id="previewProfileName">Nama Profil</div>
+        </div>
+        <div class="preview-content">
+            <div class="preview-main-text" id="previewMainText">Isi kata kata</div>
+            <div class="preview-by-text" id="previewByText">_by MweheheXcode</div>
+        </div>
+    </div>
+
+    <!-- Tombol Aksi -->
+    <button class="download-btn" id="downloadBtn">
+        <i class="fas fa-download"></i> Download Gambar
+    </button>
+    
+    <button class="back-btn" id="backBtn">
+        <i class="fas fa-arrow-left"></i> Kembali ke Form
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
