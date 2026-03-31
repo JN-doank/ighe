@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Reset semua input
         profileNameInput.value = '';
         mainTextInput.value = '';
-        byTextInput.value = 'by rhmt'; // Reset ke default
+        byTextInput.value = 'by Jansen Prikityww'; // Reset ke default
         profileImageInput.value = '';
         profileImageData = null;
         updateAvatarPreview();
