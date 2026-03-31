@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Kembalikan preview ke nilai default
         previewProfileName.textContent = 'Nama Profil';
         previewMainText.textContent = 'Isi kata kata';
-        previewByText.textContent = 'by rhmt';
+        previewByText.textContent = 'by Jansen Prikityww';
         // Sembunyikan preview dan tombol aksi
         previewContainer.classList.remove('show');
         downloadBtn.classList.remove('show');
@@ -294,5 +294,5 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     // Inisialisasi awal
     updateAvatarPreview();
-    byTextInput.value = 'by rhmt';
+    byTextInput.value = 'by Jansen Prikityww';
 });
